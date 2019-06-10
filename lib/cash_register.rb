@@ -46,8 +46,8 @@ class CashRegister
     last_trans = @transactions.pop
 
     @total =- last_trans
-     @total = last_trans - @total
-     @total.floor.to_i
+    last_trans - @total
+   
 
   end
   
