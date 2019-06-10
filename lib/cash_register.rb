@@ -47,7 +47,7 @@ class CashRegister
 
     @total =- last_trans
      @total = last_trans - @total
-     @total.floor
+     @total.floor.to_i
 
   end
   
