@@ -13,8 +13,10 @@ class CashRegister
     #binding.pry
    
     @quantity = quantity
-    @quantity.times do
-      @items << title
+    if @quantity > 0
+      @quantity.times do
+        @items << title
+      end
     end
     if @quantity > 0
       price_increased = price * quantity
