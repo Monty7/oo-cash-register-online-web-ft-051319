@@ -17,6 +17,8 @@ class CashRegister
       @quantity.times do
         @items << title
       end
+    else
+      @items << title
     end
     if @quantity > 0
       price_increased = price * quantity
