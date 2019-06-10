@@ -45,7 +45,7 @@ class CashRegister
     last_item = @items.pop
     last_trans = @transactions.pop
     binding.pry
-    total =- last_trans
+    @total =- last_trans
    # binding.pry
   end
   
