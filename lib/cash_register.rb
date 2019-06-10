@@ -15,11 +15,11 @@ class CashRegister
     @quantity = quantity
     if @quantity > 0
       @quantity.times do
-        @items << [title, price, quantity]
+        @items << [title]
         
       end
     else
-      @items << [title, price, quantity]
+      @items << [title]
     
     end
     if @quantity > 0
