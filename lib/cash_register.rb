@@ -39,7 +39,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    @items
+    @items.pop
   end
   
   def items
