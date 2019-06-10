@@ -11,9 +11,10 @@ class CashRegister
   
   def add_item(title, price, quantity = 0)
     #binding.pry
-    #@title = title
-    @items << title
+   
     @quantity = quantity
+    @items << title
+    
     if @quantity > 0
       price_increased = price * quantity
       @total += price_increased
